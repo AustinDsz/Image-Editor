@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="oh no, select an image \n (●'◡'●) "
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter_variablefont_slnt_wght"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-2dp"
+        android:background="@android:color/black"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageButton
+            android:id="@+id/btnImport"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:background="@android:color/black"
+            android:src="@drawable/arrow_in"
+            android:text="import_"
+            tools:ignore="HardcodedText"
+            />
+
+        <ImageButton
+            android:id="@+id/btnGrayscale"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:background="@android:color/black"
+            android:src="@drawable/film"
+            android:text="grayscale"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/btnReset"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:background="@android:color/black"
+            android:src="@drawable/refresh"
+            android:text="reset"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/btnRotate"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:background="@android:color/black"
+            android:src="@drawable/rotate_right"
+            android:text="reset"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:background="@android:color/black"
+            android:src="@drawable/save"
+            android:text="Save" />
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:text="Share"
+            android:background="@android:color/black"
+            android:src="@drawable/share"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
